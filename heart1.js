@@ -1,17 +1,13 @@
-/*
- * Settings
- */
 var settings = {
   particles: {
-    length: 2000, // maximum amount of particles
-    duration: 2, // particle duration in sec
-    velocity: 100, // particle velocity in pixels/sec
+    length: 10000, // maximum amount of particles
+    duration: 4, // particle duration in sec
+    velocity: 80, // particle velocity in pixels/sec
     effect: -1.3, // play with this for a nice effect
-    size: 13, // particle size in pixels
+    size: 8, // particle size in pixels
   },
 };
 /*
- * RequestAnimationFrame polyfill by Erik Möller
  */
 (function () {
   var b = 0;
@@ -212,7 +208,7 @@ var ParticlePool = (function () {
     }
     context.closePath();
     // create the fill
-    context.fillStyle = "#5c98ff";
+    context.fillStyle = "#f50b02";
     context.fill();
     // create the image
     var image = new Image();
@@ -263,4 +259,4 @@ var ParticlePool = (function () {
     onResize();
     render();
   }, 10);
-})(document.getElementById("pinkboard"));
+})(document.getElementById("pinkboard1"));
