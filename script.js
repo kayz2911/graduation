@@ -36,8 +36,8 @@ $(document).ready(function(){
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["HUST", "Bách Khoa", "Trường Rác", "Trường Số 1 Đại Cồ Việt"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        typeSpeed: 130,
+        backSpeed: 90,
         loop: true
     });
 
