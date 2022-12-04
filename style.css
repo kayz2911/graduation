@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 :root {
-  --bg: #1a1e2d;
+  --bg: #111111ff;
   --green: #a5ea9b;
   --pink: #ff61d8;
   --blue: #569cfa;
@@ -373,54 +373,54 @@ section .title::after {
   transform-origin: 100% 100%;
 }
 
-.container {
+.invitation .container {
   width: 80vw;
   height: 80vh;
 }
-.container svg {
+.invitation .container svg {
   height: 100%;
   width: 100%;
   overflow: visible;
 }
 
-#bongo-cat {
+.invitation #bongo-cat {
   fill: var(--bg);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 4;
 }
-#bongo-cat .laptop-cover,
-#bongo-cat .headphone .band {
+.invitation #bongo-cat .laptop-cover,
+.invitation #bongo-cat .headphone .band {
   fill: none;
 }
-#bongo-cat .paw,
-#bongo-cat .head {
+.invitation #bongo-cat .paw,
+.invitation #bongo-cat .head {
   stroke: var(--orange);
 }
-#bongo-cat .laptop-keyboard {
+.invitation #bongo-cat .laptop-keyboard {
   stroke-width: 2;
 }
-#bongo-cat .terminal-code {
+.invitation #bongo-cat .terminal-code {
   stroke-width: 5;
 }
-#bongo-cat .music .note,
-#bongo-cat .laptop-base,
-#bongo-cat .laptop-cover,
-#bongo-cat .paw .pads {
+.invitation #bongo-cat .music .note,
+.invitation #bongo-cat .laptop-base,
+.invitation #bongo-cat .laptop-cover,
+.invitation #bongo-cat .paw .pads {
   stroke: var(--pink);
 }
-#bongo-cat .table line,
-#bongo-cat .headphone .band,
-#bongo-cat .headphone .speaker path:nth-child(3) {
+.invitation #bongo-cat .table line,
+.invitation #bongo-cat .headphone .band,
+.invitation #bongo-cat .headphone .speaker path:nth-child(3) {
   stroke: var(--green);
 }
-#bongo-cat .terminal-frame,
-#bongo-cat .laptop-keyboard,
-#bongo-cat .headphone .speaker path:nth-child(2) {
+.invitation #bongo-cat .terminal-frame,
+.invitation #bongo-cat .laptop-keyboard,
+.invitation #bongo-cat .headphone .speaker path:nth-child(2) {
   stroke: var(--blue);
 }
-#bongo-cat .terminal-code,
-#bongo-cat .headphone .speaker path:first-child {
+.invitation #bongo-cat .terminal-code,
+.invitation #bongo-cat .headphone .speaker path:first-child {
   stroke: var(--cyan);
 }
 
