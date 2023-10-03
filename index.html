@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hieu Do</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,70 +21,17 @@
   </head>
 
   <body>
-    <div class="scroll-up-btn">
-      <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-      <div class="max-width">
-        <div class="logo">
-          <a href="#">Hieu's <span>Yearbook.</span></a>
-        </div>
-        <ul class="menu">
-          <li><a href="#home" class="menu-btn">Home</a></li>
-          <li><a href="#about" class="menu-btn">About</a></li>
-          <li><a href="#invitation" class="menu-btn">Invitation</a></li>
-          <li><a href="#location" class="menu-btn">Location</a></li>
-          <li><a href="#contact" class="menu-btn">Contact</a></li>
-        </ul>
-        <div class="menu-btn">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </nav>
-
-    <!-- home section start -->
-    <section class="home" id="home">
-      <canvas id="canvas"></canvas>
-      <div class="home-content">
-        <div class="text-2">Time: 9:30 - 11:00 a.m</div>
-        <div class="text-1">Date: 29/11/2022</div>
-        <div class="text-3">Location: <span class="typing"></span></div>
-        <a href="#">Yes, of course</a>
-      </div>
-    </section>
-
-    <!-- about section start -->
-    <section class="about" id="about">
-      <div class="max-width">
-        <h2 class="title">About me</h2>
-        <div class="about-content">
-          <div class="column left">
-            <img src="images/profile-1.jpeg" alt="" />
-          </div>
-          <div class="column right">
-            <div class="text">
-              I'm Prakash and I'm a <span class="typing-2"></span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut
-              voluptatum eveniet doloremque autem excepturi eaque, sit
-              laboriosam voluptatem nisi delectus. Facere explicabo hic minus
-              accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio
-              consequatur ipsam possimus veritatis, placeat, ab molestiae velit
-              inventore exercitationem consequuntur blanditiis omnis beatae.
-              Dolor iste excepturi ratione soluta quas culpa voluptatum
-              repudiandae harum non.
-            </p>
-            <a href="#">Read more</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- invitation section start -->
     <section class="invitation" id="invitation">
       <div class="max-width">
-        <h2 class="title">Invitation</h2>
+        <h2 class="title">Graduation Ceremony</h2>
+        <p style="margin-bottom: 2.5rem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          scelerisque, dui vel tincidunt suscipit, sapien nulla vehicula libero,
+          a pulvinar ipsum tortor at diam. Nulla tristique lorem ut justo
+          lacinia condimentum. Vivamus gravida, velit nec commodo auctor, purus
+          odio cursus nisl, nec dignissim turpis orci eu erat.
+        </p>
         <div class="wrapper">
           <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 783.55 354.91">
@@ -464,90 +417,90 @@
     <!-- location section start -->
     <section class="location" id="location">
       <div class="max-width">
-        <h2 class="title">Location</h2>
+        <h2 class="title">Details</h2>
         <div class="location-content">
           <div class="column left">
             <div class="text">Where</div>
-            <p>HUST(Ha Noi University of Science and Technology)</p>
+            <p><span class="typing"></span></p>
             <p>No.1 Dai Co Viet Street</p>
             <p>
-              <a target="_blank" href="https://goo.gl/maps/kivBhRexds1oBo8SA"
-                >See more</a
-              >
+              <a id="scrollToMap">See more</a>
             </p>
           </div>
           <div class="column right">
             <div class="text">When</div>
-            <p>Time: 9:30 a.m - 11:00 a.m</p>
-            <p>Date: 29/11/2022</p>
-            <p><a target="_blank" href="./countdown/index.html">See more</a></p>
+            <p>Time: 16:00 p.m - 17:30 p.m</p>
+            <p>Date: 21/10/2023</p>
+            <p>
+              <a data-toggle="modal" data-target="#countDownModal">See more</a>
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-      <div class="max-width">
-        <h2 class="title">Contact</h2>
-        <div class="serv-content">
-          <div class="card">
-            <div class="box">
-              <i class="fab fa-facebook"></i>
-              <div class="text">Facebook</div>
-            </div>
+    <div
+      class="modal fade"
+      id="countDownModal"
+      tabindex="-1"
+      aria-labelledby="countDownModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Count down</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="card">
-            <div class="box">
-              <i class="fab fa-instagram"></i>
-              <div class="text">Instagram</div>
-            </div>
+          <div class="modal-body">
+            <span id="days"></span> days <span id="hours"></span> hours
+            <span id="minutes"></span> minutes
+            <span id="seconds"></span> seconds
           </div>
-          <div class="card">
-            <div class="box">
-              <i class="fab fa-tiktok"></i>
-              <div class="text">Tiktok</div>
-            </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- footer section start -->
-    <footer>
-      <span
-        >Created By
-        <a target="_blank" href="https://www.facebook.com/hieudo2911/"
-          >Hieu Do</a
-        >
-        | <span class="far fa-copyright"></span> 2022 All rights reserved.</span
-      >
-    </footer>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.691539793691!2d105.8412948746199!3d21.004998380638394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135add3c46cb161%3A0x463734da30e16629!2zxJDhuqFpIGjhu41jIELDoWNoIGtob2EgSMOgIE7hu5lpIC0gSGFub2kgVW5pdmVyc2l0eSBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5!5e0!3m2!1svi!2s!4v1696350846934!5m2!1svi!2s"
+        width="80%"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="background.js"></script>
-    <!-- <script src="heart.js"></script>
-    <script src="heart1.js"></script>
-    <script src="heart2.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
     <script src="bongo.js"></script>
     <script src="script.js"></script>
-    <script>
-      // const arr = ['#pinkboard', '#pinkboard1', '#pinkboard2']
-      // let index = 0;
-      // let x;
-
-      // function change(){
-      //     for (let i = 0; i < arr.length; i++) {
-      //         $(arr[i]).addClass('d-none');
-      //     }
-      //     index = (index + 1) % arr.length;
-      //     x = arr[index];
-      //     $(x).removeClass('d-none');
-      //     setTimeout(change, 7000);
-      // }
-
-      // change();
-    </script>
   </body>
 </html>
