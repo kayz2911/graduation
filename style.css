@@ -69,26 +69,6 @@ section .title {
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
 }
-section .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 180px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
-section .title::after {
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  font-size: 20px;
-  color: crimson;
-  padding: 0 5px;
-  background: #fff;
-  transform: translateX(-50%);
-}
 
 /* invitation section styling */
 .invitation {
@@ -96,13 +76,9 @@ section .title::after {
   background: #111;
 }
 
-.invitation .title::before {
-  background: #fff;
-}
-
-.invitation .title::after {
-  background: #111;
-  content: "Đỗ Huy Hiếu";
+.invitation .title{
+  color: crimson;
+  text-decoration: underline;
 }
 
 .invitation .wrapper {
@@ -184,9 +160,11 @@ section .title::after {
 }
 
 /* location section styling */
-.location .title::after {
-  content: "Looking me";
+.location .title{
+  color: crimson;
+  text-decoration: underline;
 }
+
 .location .location-content .column {
   width: calc(50% - 30px);
 }
