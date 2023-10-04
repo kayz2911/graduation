@@ -46,4 +46,15 @@ $(document).ready(function () {
       behavior: "smooth",
     });
   });
+
+  const audio = document.getElementById("audio");
+  const playButton = document.getElementById("wrapper");
+
+  playButton.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
 });

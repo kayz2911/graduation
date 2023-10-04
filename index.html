@@ -21,8 +21,8 @@
   </head>
 
   <body>
-    <audio id="musicPlayer" loop preload="auto" autoplay>
-      <source src="song1.mp3" type="audio/mpeg" />
+    <audio id="audio" autoplay loop>
+      <source src="song.mp3" type="audio/mp3" />
     </audio>
 
     <!-- invitation section start -->
@@ -36,7 +36,7 @@
           lacinia condimentum. Vivamus gravida, velit nec commodo auctor, purus
           odio cursus nisl, nec dignissim turpis orci eu erat.
         </p>
-        <div class="wrapper">
+        <div id="wrapper" class="wrapper">
           <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 783.55 354.91">
               <g id="bongo-cat">
@@ -487,6 +487,7 @@
         width="80%"
         height="450"
         allowfullscreen=""
+        loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
