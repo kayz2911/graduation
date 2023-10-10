@@ -79,6 +79,7 @@ section .title {
 .invitation .title{
   color: crimson;
   text-decoration: underline;
+  padding: 0 350px;
 }
 
 .invitation .wrapper {
@@ -160,6 +161,15 @@ section .title {
 }
 
 /* location section styling */
+.location{
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+  padding-top: 150px;
+}
+
 .location .title{
   color: crimson;
   text-decoration: underline;
