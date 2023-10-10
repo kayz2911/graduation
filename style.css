@@ -76,10 +76,12 @@ section .title {
   background: #111;
 }
 
-.invitation .title{
+.invitation .title {
   color: crimson;
   text-decoration: underline;
   padding: 0 350px;
+  width: 50%;
+  margin: auto;
 }
 
 .invitation .wrapper {
@@ -161,7 +163,7 @@ section .title {
 }
 
 /* location section styling */
-.location{
+.location {
   background-image: url("./background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,7 +172,7 @@ section .title {
   padding-top: 150px;
 }
 
-.location .title{
+.location .title {
   color: crimson;
   text-decoration: underline;
 }
@@ -214,7 +216,6 @@ section .title {
   text-align: center;
   margin-bottom: 25px;
 }
-
 
 @keyframes animate {
   0% {
