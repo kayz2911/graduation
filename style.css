@@ -79,7 +79,6 @@ section .title {
 .invitation .title {
   color: crimson;
   text-decoration: underline;
-  padding: 0 350px;
   width: 50%;
   margin: auto;
 }
