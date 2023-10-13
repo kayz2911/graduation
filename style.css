@@ -79,8 +79,6 @@ section .title {
 .invitation .title {
   color: crimson;
   text-decoration: underline;
-  width: 50%;
-  margin: auto;
 }
 
 .invitation .wrapper {
@@ -231,5 +229,14 @@ section .title {
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 600px)  {
+  .invitation .title {
+    color: crimson;
+    text-decoration: underline;
+    margin: auto;
+    width: 50%;
   }
 }
